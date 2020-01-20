@@ -77,7 +77,9 @@ monty_hall = function(){
   }
   if(change == "si"){
     change_door = which(v != v[empty_door] & v != v[first_door])
-  }
+  } else {
+    change_door = first_door
+    }
   
   if(v[change_door] == v[max_v]){
     print("correcto")
